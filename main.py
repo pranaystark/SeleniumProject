@@ -59,7 +59,7 @@ time = driverxpath('//*[@id="input_155_hourSelect"]').send_keys('0')
 time = driverxpath('//*[@id="input_155_minuteSelect"]').send_keys('30')
 locsel= driverxpath('//*[@id="input_204"]').send_keys('l')
 
-date=driverxpath('//*[@id="lite_mode_142"]').send_keys(f'{caldate-3}-05-2021')
+date=driverxpath('//*[@id="lite_mode_142"]').send_keys(f'{caldate-5}-05-2021')
 # time.sleep(4)
 
 time = driverxpath('//*[@id="input_156_hourSelect"]').send_keys('08')
