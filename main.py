@@ -7,7 +7,7 @@ from datetime import date, timedelta
 # Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
 from selenium import webdriver
 
-d_1 = datetime.datetime.now()
+# d_1 = datetime.datetime.now()
 # req_format = (d_1,'%d %m %Y')
 # req_format = date.strftime(d_1, '%d %m %Y')
 
@@ -33,8 +33,8 @@ firstname = driverxpath('//*[@id="first_35"]').send_keys(f'{firstnme}')
 lastname = driverxpath('//*[@id="last_35"]').send_keys(f'{lastnme}')
 techemail = driverxpath('//*[@id="input_199"]').send_keys(f'{emailin}')
 projectsel = driverxpath('//*[@id="input_198"]').send_keys('1')
-# date = driverxpath('//*[@id="lite_mode_189"]').send_keys(f'{d:%d}052021')
-date = driverxpath('//*[@id="lite_mode_189"]').send_keys(f'{d_1:%d %m}2021')
+date = driverxpath('//*[@id="lite_mode_189"]').send_keys(f'{caldate-6}052021')
+#date = driverxpath('//*[@id="lite_mode_189"]').send_keys(f'{d_1:%d %m}2021')
 # # print(d_1)
 # # dat1= d_1
 # # # timd= int(timedelta)
@@ -49,7 +49,7 @@ date = driverxpath('//*[@id="lite_mode_189"]').send_keys(f'{d_1:%d %m}2021')
 
 # date = driverxpath('//*[@id="calendar_141"]').send_keys(f'{d_1}2021')
 # date = driverxpath('//*[@id="lite_mode_141"]').send_keys(f'{yest_str}')
-# date = driverxpath('//td[@class='selected']').send_keys(f'{caldate-6}052021')
+date = driverxpath('//td[@class='selected']').send_keys(f'{caldate-6}052021')
 time = driverxpath('//*[@id="input_153_hourSelect"]').send_keys('08')
 time = driverxpath('//*[@id="input_153_minuteSelect"]').send_keys('30')
 time = driverxpath('//*[@id="input_154_hourSelect"]').send_keys('16')
